@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tabs.css">
+    <title>Document</title>
+</head>
+
+<body class="yellow">
+    <div class="wrapper">
+        <div class="tabs">
+            <div class="tablist" role="tablist" aria-label="Programming Languages">
+                <button role="tab" selected="false" id="js">
+                    etude
+                </button>
+                <button role="tab" selected="false" id="ruby">portret
+                </button>
+                <button role="tab" selected="false" id="php">
+                    sketches
+                </button>
+            </div>
+            <div role="tabpanel" aria-labelledby="js" hidden>
+                <h1>Etude</h1>
+                <div class="gallery etude">
+                    <!-- <div class="gallery__item"><img class="image" src="./img/work-test.jpg"
+                            alt="etude 1 | 120x140 | 10000$"></div> -->
+                </div>
+            </div>
+            <div role="tabpanel" aria-labelledby="ruby" hidden>
+                <h1>Portret</h1>
+                <div class="gallery portret">
+                    <!-- <div class="gallery__item"><img class="image" src="./img/portret.jpg"
+                            alt="portret 1 | 120x140 | 10000$"></div> -->
+                </div>
+            </div>
+            <div role="tabpanel" aria-labelledby="php" hidden>
+                <h1>Sketches</h1>
+                <div class="gallery sketches">
+                    <!-- <div class="gallery__item"><img class="image" src="./img/sketch.jpg"
+                            alt="sketch 1 | 120x140 | 10000$"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <img class="modal-img" src="" alt="">
+            <div class="alt"></div>
+            <span class="close">×</span>
+        </div>
+
+    </div>
+    <div class="error-window">
+        <h1 class="error-title"></h1>
+        <button class="error-button"></button>
+    </div>
+</body>
+<script src="./tabs.js"></script>
+
+</html>

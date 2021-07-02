@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    background: #e0e0e0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.scroll-disable {
+    overflow: hidden;
+}
+.yellow {
+    background: linear-gradient(145deg, #e2de47, #ffff55);
+}
+.red {
+    background: #ca3a3a;
+}
+.blue {
+    background: #463cb8;
+}
+div[role='tabpanel'] {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+h1 {
+    filter: drop-shadow(1px 2px 3px black);
+}
+p {
+    filter: drop-shadow(1px 2px 3px black);
+}
+.image {
+    cursor: pointer;
+    width: 100%;
+}
+.tabs {
+    max-width: 620px;
+}
+div[role='tablist'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+button {
+    font-family: 'Do Hyeon', sans-serif;
+    background: #e0e0e0;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    width: 200px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+button#js[selected='true'] {
+    background: linear-gradient(145deg, #e2de47, #ffff55);
+    width: 80%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+button#ruby[selected='true'] {
+    background: #ff4a4a;
+    box-shadow: inset 20px 20px 60px #d93f3f, inset -20px -20px 60px #ff5555;
+    width: 80%;
+}
+button#php[selected='true'] {
+    background: #5f52f8;
+    box-shadow: inset 20px 20px 60px #5146d3, inset -20px -20px 60px #6d5eff;
+    width: 80%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div[aria-labelledby='js'] {
+    background: linear-gradient(145deg, #e2de47, #ffff55);
+    box-shadow: 20px 20px 60px #d5d243, -20px -20px 60px #ffff5b;
+}
+
+div[aria-labelledby='ruby'] {
+    background: #ff4a4a;
+    box-shadow: inset 20px 20px 60px #d93f3f, inset -20px -20px 60px #ff5555;
+}
+div[aria-labelledby='php'] {
+    background: #5f52f8;
+    box-shadow: inset 20px 20px 60px #5146d3, inset -20px -20px 60px #6d5eff;
+}
+/* modal */
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+}
+.modal-img {
+    margin-top: -50px;
+    max-width: 60%;
+    max-height: 70%;
+}
+.close {
+    color: white;
+    font-size: 3em;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+.alt {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+@keyframes fromHide {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.error-window {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.error {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 10px;
+}
+/* .error-title {
+} */
+.error-button {
+    background-color: red;
+    color: black;
+    filter: drop-shadow(1px 2px 3px black);
+    border-radius: 30px;
+}
